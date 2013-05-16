@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "js",
-        "url": "DragDropRegion.js"
+        "url": "ext\\src\\ux\\DragDropRegion.js"
     },
     "designerId": "cb142548-d0e0-41fc-bbb8-1a87700581a1"
 }
