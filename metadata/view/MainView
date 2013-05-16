@@ -26,7 +26,7 @@
                 "width": 300,
                 "suspendLayout": true,
                 "collapsible": null,
-                "title": null,
+                "title": "West Tab Panel",
                 "activeTab": 0,
                 "deferredRender": false
             },
@@ -78,7 +78,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "fn": "processMyTabPanel",
+                        "fn": "processWestTabPanel",
                         "designer|params": [
                             "config"
                         ],

@@ -25,12 +25,13 @@ Ext.define('ViewportDragDrop.view.MainView', {
 
         Ext.applyIf(me, {
             items: [
-                me.processMyTabPanel({
+                me.processWestTabPanel({
                     xtype: 'tabpanel',
                     region: 'west',
                     split: true,
                     width: 300,
                     suspendLayout: true,
+                    title: 'West Tab Panel',
                     activeTab: 0,
                     deferredRender: false,
                     items: [
@@ -117,7 +118,7 @@ Ext.define('ViewportDragDrop.view.MainView', {
         me.callParent(arguments);
     },
 
-    processMyTabPanel: function(config) {
+    processWestTabPanel: function(config) {
         var ddr = Ext.create('Ext.ux.DragDropRegion', {
             drag: true,
             drop: true,

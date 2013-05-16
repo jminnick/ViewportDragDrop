@@ -135,7 +135,7 @@ Ext.define('Ext.ux.DragDropRegion', {
                     handleId = component.getHeader() ? component.getHeader().getId() : null;
                                 
                 //if we have a handleId, assign a handle to the dragSource
-                if(handleId) dragSource.setHandleElId(handleId);
+                dragSource.setHandleElId(handleId);
                                         
                 //setup the handler for the drag event
                 dragSource.onInitDrag = function() {                                   
