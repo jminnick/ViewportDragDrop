@@ -1,0 +1,355 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainView",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "designerId": "53236fb1-71ae-425b-bb43-604a003f5194",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|collapseMode": null,
+                "layout|region": "west",
+                "layout|split": true,
+                "width": 300,
+                "suspendLayout": true,
+                "collapsible": null,
+                "title": null,
+                "activeTab": 0,
+                "deferredRender": false
+            },
+            "designerId": "ded8e08f-39f5-4586-8239-799ae4635ddd",
+            "cn": [
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "autoRender": null,
+                        "bodyPadding": 10,
+                        "title": "Tab 1"
+                    },
+                    "designerId": "a6ff833f-49df-48ae-b33b-254b077b6d8b",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "7fdcefb9-3c11-470f-b756-964fa54de209"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|anchor": "100%",
+                                "fieldLabel": "Label"
+                            },
+                            "designerId": "44c02641-0e6e-44e4-97e4-76dbf7a7fc62"
+                        }
+                    ]
+                },
+                {
+                    "type": "processcfgfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "processMyTabPanel",
+                        "designer|params": [
+                            "config"
+                        ],
+                        "implHandler": [
+                            "var ddr = Ext.create('Ext.ux.DragDropRegion', {\r",
+                            "    drag: true,\r",
+                            "    drop: true,\r",
+                            "    group: 'ewGroup'\r",
+                            "}) \r",
+                            "\r",
+                            "\r",
+                            "config.plugins = [ddr]\r",
+                            "return config;"
+                        ]
+                    },
+                    "designerId": "6cb02403-65b9-4149-90fb-21171a448032"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "My Panel"
+                    },
+                    "designerId": "b70bbf6a-0b60-40db-bc1e-3ac6da818040",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "designerId": "c9f297b3-c196-4df7-9fa5-8a37f446744d"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|collapseMode": null,
+                "layout|region": "north",
+                "layout|split": true,
+                "height": 175,
+                "collapsible": true,
+                "title": "North Region Panel"
+            },
+            "designerId": "1ae4d577-cbad-41da-8b94-1f690c7bf25a",
+            "cn": [
+                {
+                    "type": "processcfgfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "processNorthRegionPanel",
+                        "designer|params": [
+                            "config"
+                        ],
+                        "implHandler": [
+                            "config.plugins = [Ext.create('Ext.ux.DragDropRegion')]\r",
+                            "return config;"
+                        ]
+                    },
+                    "designerId": "874b6637-1b07-47d0-912f-a770f6f2ebf1"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|collapseMode": null,
+                "layout|region": "center",
+                "bodyPadding": 10,
+                "title": "Center Form Panel"
+            },
+            "designerId": "749508e3-979b-44bb-8e32-59a05f1757c9",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "fieldLabel": "Label"
+                    },
+                    "designerId": "9bd35f29-ab36-4b76-b95d-9591e083a764"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "fieldLabel": "Label"
+                    },
+                    "designerId": "1b1af78a-83a8-45be-9a4a-e18d6cb4994e"
+                },
+                {
+                    "type": "processcfgfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "processCenterFormPanel",
+                        "designer|params": [
+                            "config"
+                        ],
+                        "implHandler": [
+                            "config.plugins = [Ext.create('Ext.ux.DragDropRegion')]\r",
+                            "return config;"
+                        ]
+                    },
+                    "designerId": "e43c1f8f-f1ef-4518-9478-adb040d25d9f"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tree.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|collapseMode": "mini",
+                "layout|region": "east",
+                "layout|split": true,
+                "id": null,
+                "itemId": null,
+                "width": 200,
+                "collapsible": true,
+                "title": "East Tree Grid Panel"
+            },
+            "designerId": "8f6a70d4-6aad-4551-bd6a-2cd3f8defaad",
+            "isBuiltIn": true,
+            "iconCls": "icon-treegridpanel",
+            "autoName": "TreeGrid",
+            "cn": [
+                {
+                    "type": "Ext.tree.View",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "617664f3-ce5e-4c32-9a6e-49832352e230"
+                },
+                {
+                    "type": "Ext.tree.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "text",
+                        "text": "Nodes",
+                        "flex": 1
+                    },
+                    "designerId": "f5741e03-2658-474f-94d4-8cef4863005c"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "value",
+                        "text": "Value"
+                    },
+                    "designerId": "f6b7fe7d-77f6-46cf-8b21-f8f8e9a738af"
+                },
+                {
+                    "type": "processcfgfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "processEastTreeGridPanel",
+                        "designer|params": [
+                            "config"
+                        ],
+                        "implHandler": [
+                            "var ddr = Ext.create('Ext.ux.DragDropRegion', {\r",
+                            "    drag: true,\r",
+                            "    drop: true,\r",
+                            "    group: 'ewGroup'\r",
+                            "}) \r",
+                            "\r",
+                            "\r",
+                            "config.plugins = [ddr]\r",
+                            "return config;"
+                        ]
+                    },
+                    "designerId": "d32c67fa-f88a-46e5-bd71-771602197fda"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "layout|split": true,
+                "height": 175,
+                "collapsible": true,
+                "title": "South Panel"
+            },
+            "designerId": "f5b27c8c-b7f1-4a52-9427-e06be07c9f08",
+            "cn": [
+                {
+                    "type": "processcfgfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "processSouthPanel",
+                        "designer|params": [
+                            "config"
+                        ],
+                        "implHandler": [
+                            "var ddr = Ext.create('Ext.ux.DragDropRegion', {\r",
+                            "    drag: true,\r",
+                            "    drop: true,\r",
+                            "    group: 'ewGroup'\r",
+                            "});\r",
+                            "\r",
+                            "config.plugins = [ddr];\r",
+                            "\r",
+                            "return config;"
+                        ]
+                    },
+                    "designerId": "901e96a5-f83a-4167-8b5b-b72dc8d4d492"
+                }
+            ]
+        }
+    ]
+}

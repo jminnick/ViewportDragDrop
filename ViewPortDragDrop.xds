@@ -1,0 +1,57 @@
+{
+    "name": "ViewPortDragDrop",
+    "settings": {
+        "urlPrefix": "http://localhost/architect/ViewPortDragDrop",
+        "exportPath": ""
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 971,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000501,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "6e493277-c384-4326-af3a-1ccf1ec84f35": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "53236fb1-71ae-425b-bb43-604a003f5194": {
+            "paths": [
+                "metadata/view/MainView",
+                "app/view/override/MainView.js",
+                "app/view/MainView.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MainView"
+        },
+        "cb142548-d0e0-41fc-bbb8-1a87700581a1": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
+        },
+        "3df71f2b-83e1-4f79-8665-4d96625401dc": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "53236fb1-71ae-425b-bb43-604a003f5194"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "6e493277-c384-4326-af3a-1ccf1ec84f35",
+            "cb142548-d0e0-41fc-bbb8-1a87700581a1",
+            "3df71f2b-83e1-4f79-8665-4d96625401dc"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
