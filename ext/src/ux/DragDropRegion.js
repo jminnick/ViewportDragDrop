@@ -187,7 +187,13 @@ Ext.define('Ext.ux.DragDropRegion', {
                     //add the target panel back with the new region                    
                     parentLayout.add(component); 
                     //bring a bit of attention to the swapped region
-                    if (me.frameSwapped) component.getEl().frame(me.frameColor, me.frameCount);                     
+                    if (me.frameSwapped) {                        
+                        //suspend any existing animation
+                        sourcePanel.getEl().stopAnimation();
+                        component.getEl().stopAnimation();
+                        //frame the component
+                        component.getEl().frame(me.frameColor, me.frameCount);
+                    }                     
                     //rerender the layout
                     Ext.defer(parentLayout.doLayout, 3, parentLayout);
                     
